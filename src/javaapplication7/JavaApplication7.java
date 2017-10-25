@@ -23,9 +23,18 @@ public class JavaApplication7 {
         
         float dolar, real;
         
+        System.out.println("Entre com valor em dolar");
         dolar = sc.nextFloat();
         
-        System.out.println(c.convert(dolar));
+        System.out.println("Valor em Reais: "+c.convert(dolar));
+        
+        Imc i = new Imc();
+        float peso, altura;
+        System.out.println("Entre com peso e altura");
+        peso = sc.nextFloat();
+        altura = sc.nextFloat();
+        
+        System.out.println("O imc é: "+i.calcimc(peso, altura));
         
     }
     
