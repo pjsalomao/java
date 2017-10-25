@@ -5,6 +5,8 @@
  */
 package javaapplication7;
 
+import java.util.Scanner;
+
 /**
  *
  * @author work
@@ -16,6 +18,15 @@ public class JavaApplication7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        Cotacao c = new Cotacao();
+        
+        float dolar, real;
+        
+        dolar = sc.nextFloat();
+        
+        System.out.println(c.convert(dolar));
+        
     }
     
 }
